@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Playwrite+DE+Grund+Guides&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Saira:ital,wght@0,100..900;1,100..900&display=swap");
+@import "tailwindcss";
+
+* {
+  font-family: saira, sans-serif;
+}
+/* In CSS, listing multiple fonts like this is known as a font stack. The browser reads them from left to right, using the first one it successfully finds and moving to the next if the previous one is unavailable.*/
+
+@theme {
+  --color-dark-100: #1a1a1a;
+  --color-dark-200: #1f1f1f;
+  --color-dark-300: #2d2d2d;
+  --color-dark-400: #3d3d3d;
+  --color-purple: #8b5cf6;
+  --color-pink: #ec4899;
+  --color-blue: #3b82f6;
+}
+/*a way to define Global Design Tokens (custom variables) using a theme block*/
+
+.typewriter {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid #8b5cf6; /* The typewriter cursor */
+  white-space: nowrap;
+  width: 0;
+  animation:
+    typing 3s steps(20, end) forwards,
+    blink-caret 0.75s step-end 4;
+}
+/* The typing effect */
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 15ch; /* Adjust this value based on the length of your text */
+  }
+}
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #8b5cf6; /* Cursor color */
+  }
+}
+/* The blinking effect for the cursor */
