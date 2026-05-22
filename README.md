@@ -2,7 +2,7 @@
 
 A personal portfolio website built with React, Vite, and Tailwind CSS.
 
-🌐 Live: [coming soon]
+🌐 Live: https://nivedita-portfolio-phi.vercel.app
 
 ---
 
