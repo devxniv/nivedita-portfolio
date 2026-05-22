@@ -23,9 +23,11 @@ const Hero = () => {
               Nivedita Bedarkar
             </span>
           </h1>
-          <h2 className="text-2xl md:text-4xl font-semibold mb-6 typewriter">
-            Full Stack Developer
-          </h2>
+          <div className="text-center md:text-left w-full mb-6">
+            <h2 className="text-2xl md:text-4xl font-semibold typewriter inline-block">
+              Full Stack Developer
+            </h2>
+          </div>
           <p className="text-lg text-gray-300 mb-8 max-w-md mx-auto md:mx-0">
             I create stunning web experiences with modern technologies.
           </p>
