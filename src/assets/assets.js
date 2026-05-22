@@ -107,7 +107,7 @@ export const projects = [
 
   {
     title: "Project Management System",
-    tag: "Frontend Under Development",
+    tag: "Backend Active / Frontend in Progress",
     description:
       "A RESTful backend API for managing projects, tasks, and team members with JWT authentication and role-based access control.",
     image: projectImg2,
